@@ -1,0 +1,2 @@
+[18-Jun-2025 10:38:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/customer/www/rsoa151.rehanschool.us/public_html/dg/header.php:16) in /home/customer/www/rsoa151.rehanschool.us/public_html/dg/login.php on line 13
+ 
