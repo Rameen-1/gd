@@ -1,0 +1,179 @@
+/* Pastel Theme with Animations - style.css */
+ 
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #fdf6f0;
+    color: #333;
+    animation: fadeIn 0.8s ease-in;
+}
+ 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+ 
+header {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    color: #333;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(173, 173, 173, 0.2);
+    border-bottom: 4px solid #ffdefb;
+    animation: slideDown 0.6s ease-out;
+}
+ 
+@keyframes slideDown {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+ 
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+ 
+nav {
+    margin-top: 10px;
+    animation: fadeIn 1.2s ease-in;
+}
+ 
+nav a {
+    color: #555;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+ 
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background: #a16ae8;
+    transition: 0.3s;
+}
+ 
+nav a:hover::after {
+    width: 100%;
+}
+ 
+nav a:hover {
+    color: #a16ae8;
+    text-shadow: 0 0 3px #f3d1ff;
+}
+ 
+main {
+    padding: 30px;
+    max-width: 850px;
+    margin: 30px auto;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+ 
+h2 {
+    color: #a16ae8;
+    border-bottom: 2px dashed #fad0c4;
+    padding-bottom: 5px;
+    position: relative;
+    animation: fadeIn 1s ease;
+}
+ 
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    padding: 12px;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff0f6;
+    color: #444;
+    transition: all 0.3s ease;
+}
+ 
+form input:focus {
+    border-color: #a16ae8;
+    box-shadow: 0 0 5px #fbc2eb;
+    outline: none;
+}
+ 
+form button,
+button {
+    background: #a1c4fd;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(161, 196, 253, 0.3);
+}
+ 
+form button:hover,
+button:hover {
+    background: #c2e9fb;
+    color: #333;
+    transform: scale(1.03);
+}
+ 
+ul {
+    list-style: none;
+    padding: 0;
+    animation: fadeIn 1.2s ease-in-out;
+}
+ 
+li {
+    margin: 10px 0;
+    background: #f5f7fa;
+    padding: 12px;
+    border-left: 6px solid #ffd6e0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+ 
+li:hover {
+    transform: translateX(5px);
+    background: #fffaff;
+}
+ 
+a {
+    color: #a16ae8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+ 
+a:hover {
+    text-decoration: underline;
+    color: #ff9aa2;
+}
+ 
+span {
+    font-weight: bold;
+    color: #ff6f91;
+}
+ 
+footer {
+    background: #f6f6f6;
+    color: #999;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    border-top: 1px solid #eee;
+}
+ 
+ 
